@@ -1,335 +1,364 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&family=Playfair+Display:ital@1&family=Poppins:wght@500&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&family=Playfair+Display:ital@1&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    font-family: 'Montserrat', sans-serif;
+
+body {
+    /* width: 100%; */
+    font-family: 'Source Serif Pro', serif;
+    padding: 0 auto;
 }
 
-/*=======-------
-common css
-          ================------*/
-
-.container{
-    max-width: 1200px;
-    margin: 0, auto;
-    padding: 30px;
-
+body p {
+    color: #6C6C6C;
+    font-size: 16px;
 }
 
-.highlight{
-    color: #db1482;
+header {
+    background-color: rgb(171, 212, 218);
 }
-.first-button{
-    outline: 0;
-    padding: 10px 15px;
-    border-radius: 20px;
-    border-style:outset;
-    color: white;
-    font-size: 15px;
-     font-weight: bold;
-     background-color: #db1482;
-     cursor: pointer;
-    box-shadow:  15px  rgb(146, 75, 87);
-    position: relative;
-    top:0;
 
+.logo {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 40px;
 }
-.first-button:active{
-    top:5px;
-    box-shadow: 8px  rgb(146, 75, 87); ;
-}
-header{
-    height: 100vh;
-    
-    background-image:url(../images/photo-1499346030926-9a72daac6c63.jfif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(0,0,0,.2);
-    background-blend-mode: overlay;
-    
-}
-.headline{
+
+.logo h1 {
+    font-size: 35px;
     font-weight: bold;
-    font-size:20px;
 }
 
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 90px;
-    align-items: center;
-
-}
-.navigation{
-    display: flex;
-}
-.navigation li{
-    list-style: none;
-   margin: 15px;
-    }
-.navigation li a{
-    text-decoration: none;
-    color: black;
-    font-size: medium;
-    font-weight: 600;
-    padding: 15px, 10px;
-}
-.journey{
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.journey-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-}
-.journey-left h1{
-    font-size: 45px;
-    font-style:normal;
-    color:rgba(0,0,0,.9);
-}
-.journey-left p{
-    line-height: 25px;
-    font-family: 'Poppins', sans-serif;
-    color:rgba(0,0,0,.8);
-    margin: 20px 0;
+.brand-color {
+    color: rgb(224, 44, 109);
 }
 
+/* ----------------------------------------------------------------
+-----------------------Main Sections Style----------------------
+---------------------------------------------------------------- */
 
-
-.journey-right{
+.main-section {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-}
-.journey-right img{
-    width: 100%;
     height: 500px;
-}
-
-
- /*=======----popular collection------=====*/
-
-
- .section-title{
-     text-align: center;
- }
- .section-title h2{
-     font-size: 40px;
-     margin: 50px 0;
-     border-bottom: 5px solid #db1482;
-     display: inline-block;
-     letter-spacing: 10px;
-    justify-content: center; 
+    width: 75%;
+    margin: 0 auto;
     align-items: center;
- }
-
-   /* photo design */
-    .object img{
-       width: 250px;
-       height: 100px;
-   }
-   .fa-star.filled{
-       color: #FFC014;
-   }
-   .fa-star.empty{
-       color: wheat;
-   }
-   .objects .object{
-       display: grid;
-       grid-template-columns: repeat(2, 1fr);
-       gap: 30px;
-   }
-   /* contact */
-   .contact{
-       display: grid;
-       grid-template-columns: 1fr 1fr;
-       gap:30px
-   }
-.contact-left img{
-width:100%
 }
-.contact-right form{
+
+.main-section h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.main-section p {
+    width: 70%;
+    padding-bottom: 25px;
+    padding-top: 10px;
+}
+
+.btn {
+    height: 44px;
+    width: 168px;
+    font-size: 16px;
+    font-weight: 500;
+    background: rgb(224, 44, 109);
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.banner-img img {
+    width: 100%;
+}
+
+/* hover effect */
+
+.main-section:hover .banner-img {
+    transform: scale(1.5);
+    transition: transform 2.5s ease-in-out;
+}
+-
+/* -----------items Section Style---------------------- */
+
+
+.collection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 27px;
+    column-gap: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.item h3 {
+    font-weight: 400;
+}
+
+.item p {
+    line-height: 10px;
+    font-size: 14px;
+}
+
+.item {
+    height: 470px;
+    width: 325px;
     display: flex;
     flex-direction: column;
-   align-items: center;
+    align-items: flex-start;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
 }
-.text-field{
+
+.item-img img {
+    height: 256px;
     width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    font-size: 18px;
 }
 
-/* Add Font Awosome Icon */
- footer {
-     height: 50px;
-   background-color: rgb(22, 22, 54);
-   width:100%;
-   display: flex;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
-  padding: 60px;
+.item-details {
+    margin-top: 16px;
 }
-footer h3, p{
-    color: whitesmoke;
-    font-size: 20px;
-}
-.icon i{
-cursor:pointer;
-text-align: center;
-padding-top:100px;
 
+.item-details p {
+    margin-top: 10px;
 }
-.icon i:hover{
+
+.section-title {
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.white {
+    color: white;
+}
+
+.star-section {
+    display: flex;
+    align-items: center;
+}
+
+.star-section i {
+    color: orangered;
+    font-size: 12px;
+}
+
+.rating {
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+.see-more {
+    width: 85%;
+    text-decoration: none;
+    text-align: right;
+}
+
+.see-more a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* -------
+-----------------------Footer----------------------
+---------- */
+
+footer {
+    padding-top: 50px;
+    background-color: rgb(32, 5, 75);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+    color: white;
+}
+
+footer p {
+    color: rgba(218, 211, 211, 0.993);
+    font-weight: 400;
+}
+
+.icon {
+    margin-top: 15px;
+}
+
+.icon i {
+    cursor: pointer;
+    height: 32px;
+    width: 32px;
+    background-color: rgb(68, 57, 57);
+    text-align: center;
+    padding-top: 8px;
+    border-radius: 50%;
+}
+
+/* Contact Form */
+.contact {
+    margin-top: 50px;
+    
+ padding-bottom: 50px;
+}
+
+.contact-section {
+    display: flex;
    
-   color: white;
-    
+    height: 350px;
+    width: 80%;
+    margin: 0 auto;
+    align-items: center;
 }
 
-/*--------
-         Media Query 01
-         --------------------  */
+.contact-section img {
+    width: 100%;
+}
 
-         @media only screen and (min-width: 600px) and (max-width: 800px) {
+input {
+    width: 75%;
+    margin: 5px 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
 
-            body {
-                    margin-left: 0;
-                    margin-right: 0;
-                    width: 100%;
-            }
+.box {
+    width: 75%;
+    padding: 10px 10px 150px 10px;
+}
+
+.box-button {
+    margin: 5px 20px;
+    padding-top: 10px;
+}
+
+.object2 {
+    order: 2;
+}
+
+.object1 {
+    order: 1;
+}
+
+/* 
+-------Media Query Mobile-------------------
+- */
+
+@media only screen and (min-width: 300px) and (max-width: 688px) {
+
+
     
-            .navigation {
-                    font-size: 20pxpx;
-            }
+
+    .main-section {
+            text-align: center;
+            width: 90%;
+            margin-left: 0;
+            margin-right: 0;
+            display: block;
+            padding-left: 20px;
+            padding-bottom: 20px;
+            height: 100%;
+    }
+
+    .object2 {
+            order: 1;
+    }
+
+    .object1 {
+            order: 2;
+    }
+
+    .banner-img img {
+            width: 80%;
+    }
+
+    .collection {
+            width: 90%;
+            margin: 0 auto;
+            grid-template-columns: repeat(1, 1fr);
+            column-gap: 25px;
+    }
+
     
-            .container {
-                    font-size: 32px;
-                    margin-top: 20px;
-                    line-height: 25px;
-            }
-    
-           
-            
-    
-            .navigation {
-                    
-                    text-align: center;
-            }
-    
-            .h1 {
-                    font-size: 30px;
-            }
-           p{
-            font-size: 18px;
+
+   
+
+    .contact-section {
             width: 100%;
-            margin: 5px;
-           }
-            .section {
-                    margin-left: 0;
-                    margin-right: 0;
-                    display: flex;
-                    padding: 5%;
-                    
-            }
+            display: block;
+            height: 100%;
+    }
+
+    .contact-section img {
+            width: 90%;
+            margin-bottom: 30px;
+    }
+
+    input {
+            width: 90%;
+    }
+
+    .box {
+            width: 90%;
+    }
+}
+
+
+/* -----------Media Query Tab--------- */
+
+@media only screen and (min-width: 688px) and (max-width: 996px) {
+
+   
     
-            
-            
+
     
-            
-        }
-    
-            .object {
-                    
-                    margin: 0 auto;
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
-            }
-    
+
+    .main-section {
+            padding: 20px 30px;
            
-            
-    
-            .contact {
-                    display: block;
-                    flex-direction: column;
-                    height: 100%;
-            }
-    
-            .contact-left img {
-                   width:100%
-    
-            }
-    
-            /* Media Query 02 */
+            display: flex;
+            height: 100%;
+            width: 100%;
+    }
 
-            @media only screen and (min-width: 250px) and (max-width: 500px) {
+    .main-section h1 {
+            font-size: 35px;
+    }
 
-                body {
-                        margin-left: 0;
-                        margin-right: 0;
-                        width: 100%;
-                }
-        
-                .navigation {
-                        font-size: 20px;
-                       
-                }
-        
-               
-        
-                .container {
-                        font-size: 20px;
-                        margin-top: 15px;
-                        
-                }
-        
-               
-        
-                .section {
-                        width: 100%;
-                        margin: 0 ,0;
-                        display: block;
-                       padding: 20px;
-                        height: 100%;
-                }
-        
-                
-        
-                
-        
-                .object {
-                        width: 90%;
-                        margin: 0 auto;
-                        grid-template-columns: repeat(1, 1fr);
-                        column-gap: 20px;
-                }
-                
-                    p{
-                        font-size: 18px;
-                        width: 100%;
-                        margin: 5px;
-                   }
-        
-                .contact {
-                        width: 100%;
-                        display: block;
-                        height: 100%;
-                }
-        
-                .contact-left img {
-                            width:100%
-                        }
+    .banner-img img {
+            width: 100%;
+    }
+
+    .collection {
+           
+           
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+    }
+
+
     
-                    }
-                
-        
+
+    .contact-section {
+            display: block;
+            flex-direction: column;
+            height: 100%;
+    }
+
+
+    .input {
+            width: 90%;
+    }
+
+    .box {
+            width: 90%;
+    }
+}
+
