@@ -144,11 +144,192 @@ nav{
    .fa-star.empty{
        color: wheat;
    }
-   .objects{
+   .objects .object{
        display: grid;
        grid-template-columns: repeat(2, 1fr);
+       gap: 30px;
    }
+   /* contact */
+   .contact{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       gap:30px
+   }
+.contact-left img{
+width:100%
+}
+.contact-right form{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+.text-field{
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 18px;
+}
 
-   
+/* Add Font Awosome Icon */
+ footer {
+     height: 50px;
+   background-color: rgb(22, 22, 54);
+   width:100%;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+  padding: 60px;
+}
+footer h3, p{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.icon i{
+cursor:pointer;
+text-align: center;
+padding-top:100px;
 
+}
+.icon i:hover{
    
+   color: white;
+    
+}
+
+/*--------
+         Media Query 01
+         --------------------  */
+
+         @media only screen and (min-width: 600px) and (max-width: 800px) {
+
+            body {
+                    margin-left: 0;
+                    margin-right: 0;
+                    width: 100%;
+            }
+    
+            .navigation {
+                    font-size: 20pxpx;
+            }
+    
+            .container {
+                    font-size: 32px;
+                    margin-top: 20px;
+                    line-height: 25px;
+            }
+    
+           
+            
+    
+            .navigation {
+                    
+                    text-align: center;
+            }
+    
+            .h1 {
+                    font-size: 30px;
+            }
+           p{
+            font-size: 18px;
+            width: 100%;
+            margin: 5px;
+           }
+            .section {
+                    margin-left: 0;
+                    margin-right: 0;
+                    display: flex;
+                    padding: 5%;
+                    
+            }
+    
+            
+            
+    
+            
+        }
+    
+            .object {
+                    
+                    margin: 0 auto;
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+            }
+    
+           
+            
+    
+            .contact {
+                    display: block;
+                    flex-direction: column;
+                    height: 100%;
+            }
+    
+            .contact-left img {
+                   width:100%
+    
+            }
+    
+            /* Media Query 02 */
+
+            @media only screen and (min-width: 250px) and (max-width: 500px) {
+
+                body {
+                        margin-left: 0;
+                        margin-right: 0;
+                        width: 100%;
+                }
+        
+                .navigation {
+                        font-size: 20px;
+                       
+                }
+        
+               
+        
+                .container {
+                        font-size: 20px;
+                        margin-top: 15px;
+                        
+                }
+        
+               
+        
+                .section {
+                        width: 100%;
+                        margin: 0 ,0;
+                        display: block;
+                       padding: 20px;
+                        height: 100%;
+                }
+        
+                
+        
+                
+        
+                .object {
+                        width: 90%;
+                        margin: 0 auto;
+                        grid-template-columns: repeat(1, 1fr);
+                        column-gap: 20px;
+                }
+                
+                    p{
+                        font-size: 18px;
+                        width: 100%;
+                        margin: 5px;
+                   }
+        
+                .contact {
+                        width: 100%;
+                        display: block;
+                        height: 100%;
+                }
+        
+                .contact-left img {
+                            width:100%
+                        }
+    
+                    }
+                
+        
