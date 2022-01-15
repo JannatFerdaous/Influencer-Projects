@@ -129,6 +129,26 @@ nav{
      border-bottom: 5px solid #db1482;
      display: inline-block;
      letter-spacing: 10px;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
  }
+
+   /* photo design */
+    .object img{
+       width: 250px;
+       height: 100px;
+   }
+   .fa-star.filled{
+       color: #FFC014;
+   }
+   .fa-star.empty{
+       color: wheat;
+   }
+   .objects{
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+   }
+
+   
+
+   
