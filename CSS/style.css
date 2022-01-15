@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&family=Playfair+Display:ital@1&family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&family=Playfair+Display:ital@1&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*=======-------
+common css
+          ================------*/
+
+.container{
+    max-width: 1200px;
+    margin: 0, auto;
+    padding: 30px;
+
+}
+
+.highlight{
+    color: #db1482;
+}
+.first-button{
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border-style:outset;
+    color: white;
+    font-size: 15px;
+     font-weight: bold;
+     background-color: #db1482;
+     cursor: pointer;
+    box-shadow:  15px  rgb(146, 75, 87);
+    position: relative;
+    top:0;
+
+}
+.first-button:active{
+    top:5px;
+    box-shadow: 8px  rgb(146, 75, 87); ;
+}
+header{
+    height: 100vh;
+    
+    background-image:url(../images/photo-1499346030926-9a72daac6c63.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0,0,0,.2);
+    background-blend-mode: overlay;
+    
+}
+.headline{
+    font-weight: bold;
+    font-size:20px;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+   margin: 15px;
+    }
+.navigation li a{
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    font-weight: 600;
+    padding: 15px, 10px;
+}
+.journey{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.journey-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.journey-left h1{
+    font-size: 45px;
+    font-style:normal;
+    color:rgba(0,0,0,.9);
+}
+.journey-left p{
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    color:rgba(0,0,0,.8);
+    margin: 20px 0;
+}
+
+
+
+.journey-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.journey-right img{
+    width: 100%;
+    height: 500px;
+}
+
+
+ /*=======----popular collection------=====*/
+
+
+ .section-title{
+     text-align: center;
+ }
+ .section-title h2{
+     font-size: 40px;
+     margin: 50px 0;
+     border-bottom: 5px solid #db1482;
+     display: inline-block;
+     letter-spacing: 10px;
+    justify-content: center;
+    align-items: center;
+ }
